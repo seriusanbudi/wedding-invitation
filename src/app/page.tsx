@@ -80,10 +80,10 @@ export default function Home() {
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 md:mb-4 text-pink-600 font-alex">
                     Location
                   </h3>
-                  <p className="text-gray-700">Pondok Luwih</p>
-                  <p className="text-gray-700 mb-6">
-                    Jalan Batuyang Gg. Garuda 100X
+                  <p className="text-gray-700 mb-2">
+                    Jalan Batuyang Gg. Garuda No. 100X
                   </p>
+                  <p className="text-gray-700 mb-6 font-bold">(Pondok Luwih)</p>
 
                   <div className="mb-10">
                     <iframe
