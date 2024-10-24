@@ -1,50 +1,8 @@
-"use client";
-
 import { CalendarHeart, Clock, MapPin, Heart, Bike } from "lucide-react";
-import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in-up");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
-      observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="min-h-dvh bg-gradient-to-b from-pink-100 to-white">
-      <style jsx global>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fadeInUp 0.6s ease-out forwards;
-        }
-        .animate-on-scroll {
-          opacity: 0;
-        }
-      `}</style>
-
       <header className="bg-white bg-opacity-90 shadow-2xl fixed top-0 left-0 right-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-center items-center">
           <Heart className="w-6 h-6 md:w-8 md:h-8 mx-auto text-pink-600" />
