@@ -123,8 +123,9 @@ export default function Home() {
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/images/footer.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
         <div className="relative z-10 container mx-auto px-4 py-12">
           <div className=" text-center">
+            <p className="font-alex text-5xl md:text-7xl">Thank you </p>
             <p className="font-alex text-2xl md:text-4xl">
-              Thank you for being part of our love story
+              For being part of our love story
             </p>
           </div>
         </div>
