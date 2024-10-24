@@ -24,7 +24,7 @@ export default function Home() {
                   </h1>
                   <div className="flex justify-center">
                     <p className="bg-pink-600 text-base font-bold px-4 py-1 text-white rounded-md w-fit">
-                      November 4, 2024
+                      4 November 2024
                     </p>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ export default function Home() {
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
                     Date
                   </h3>
-                  <p className="text-gray-700">November 4, 2024</p>
+                  <p className="text-gray-700">4 November 2024</p>
                 </div>
                 <div className=" bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <Clock className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
