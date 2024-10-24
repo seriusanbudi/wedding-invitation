@@ -40,12 +40,15 @@ export default function Home() {
               We are Married!
             </h2>
             <p className=" lg:text-2xl mb-6 md:mb-8 text-gray-700 max-w-3xl mx-auto">
-              We are overjoyed to announce our marriage and cordially invite you
-              to join us in celebrating our love and blessing our union.
+              Dengan penuh sukacita, kami mengumumkan pernikahan kami dan dengan
+              hormat mengundang Anda untuk bergabung bersama kami dalam
+              merayakan cinta ini serta memberikan doa restu untuk kebahagiaan
+              dan kelanggengan ikatan kami.
             </p>
             <div className=" w-24 md:w-32 h-1 bg-pink-300 mx-auto mb-6 md:mb-8"></div>
             <p className=" text-base md:text-lg lg:text-xl text-gray-600">
-              Your presence will make our special day even more memorable.
+              Kehadiran Anda akan menjadikan hari istimewa kami semakin berkesan
+              dan tak terlupakan.
             </p>
           </div>
         </section>
@@ -53,7 +56,7 @@ export default function Home() {
         <section id="event" className="py-16 md:py-20 bg-pink-50">
           <div className="container mx-auto px-4">
             <h2 className=" text-4xl lg:text-6xl text-center mb-12 md:mb-16 text-pink-600 font-alex">
-              Celebration Details
+              Rincian Acara
             </h2>
 
             <div className="grid gap-4 md:gap-8 w-full">
@@ -61,14 +64,14 @@ export default function Home() {
                 <div className=" bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <CalendarHeart className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
-                    Date
+                    Hari & Tanggal
                   </h3>
-                  <p className="text-gray-700">4 November 2024</p>
+                  <p className="text-gray-700">Senin, 4 November 2024</p>
                 </div>
                 <div className=" bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <Clock className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
-                    Time
+                    Waktu
                   </h3>
                   <p className="text-gray-700">4:00 PM - 10:00 PM</p>
                 </div>
@@ -78,7 +81,7 @@ export default function Home() {
                 <div className=" bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <MapPin className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 md:mb-4 text-pink-600 font-alex">
-                    Location
+                    Lokasi
                   </h3>
                   <p className="text-gray-700 mb-2">
                     Jalan Batuyang Gg. Garuda No. 100X
@@ -101,16 +104,18 @@ export default function Home() {
                     href="https://maps.app.goo.gl/gCKwop4cS8khAigq7"
                     className="px-4 py-2 bg-pink-600 rounded-md text-white font-semibold"
                   >
-                    See location on the map
+                    Lihat dalam peta
                   </a>
                 </div>
 
                 <div className="mt-4 p-4 bg-pink-100 rounded-3xl grid gap-4">
                   <Bike className="w-8 h-8 mx-auto text-pink-600" />
                   <p className="text-sm md:text-base text-gray-700 text-center">
-                    <b>Note:</b> It is preferable to bring a motorcycle instead
-                    of a car. Cars can not access the venue directly, and you
-                    will need to walk about 500 meters from the parking spot.
+                    <b>Catatan:</b>
+                    <br />
+                    Lebih disarankan untuk membawa motor daripada mobil, karena
+                    mobil tidak bisa langsung masuk ke lokasi. Anda perlu
+                    berjalan sekitar 500 meter dari tempat parkir.
                   </p>
                 </div>
               </div>
@@ -123,9 +128,9 @@ export default function Home() {
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/images/footer.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
         <div className="relative z-10 container mx-auto px-4 py-12">
           <div className=" text-center">
-            <p className="font-alex text-5xl md:text-7xl">Thank you </p>
-            <p className="font-alex text-2xl md:text-4xl">
-              For being part of our love story
+            <p className="font-alex text-5xl md:text-7xl">Terima kasih</p>
+            <p className="text-xl md:text-2xl">
+              Atas kehadiran dan menjadi bagian dari kisah cinta kami.
             </p>
           </div>
         </div>
