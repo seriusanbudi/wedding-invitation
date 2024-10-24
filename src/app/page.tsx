@@ -1,100 +1,167 @@
-import Image from "next/image";
+"use client";
+
+import { CalendarHeart, Clock, MapPin, Heart, Menu, Bike } from "lucide-react";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fade-in-up");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+      observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className="min-h-dvh bg-gradient-to-b from-pink-100 to-white">
+      <style jsx global>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fade-in-up {
+          animation: fadeInUp 0.6s ease-out forwards;
+        }
+        .animate-on-scroll {
+          opacity: 0;
+        }
+      `}</style>
+
+      <header className="bg-white bg-opacity-90 shadow-2xl fixed top-0 left-0 right-0 z-50">
+        <div className="container mx-auto px-4 py-4 flex justify-center items-center">
+          <Heart className="w-6 h-6 md:w-8 md:h-8 mx-auto text-pink-600" />
         </div>
+      </header>
+
+      <main>
+        <section id="home" className="bg-white relative shadow-2xl">
+          <div className="container mx-auto text-center">
+            <div className="max-w-3xl mx-auto">
+              <div className="relative h-screen flex items-center justify-center">
+                <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/main.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
+                <div className="hidden md:block absolute top-0 left-0 bottom-0 w-[92px] bg-gradient-to-l from-transparent from-20% via-white to-white" />
+                <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[92px] bg-gradient-to-r from-transparent from-20% via-white to-white" />
+
+                <div className="relative text-center z-10 px-4">
+                  <h1 className="animate-on-scroll text-6xl lg:text-8xl font-bold mb-4 font-alex text-pink-600">
+                    Budi & Saras
+                  </h1>
+                  <p className="animate-on-scroll text-base sm:font-bold underline">
+                    November 4, 2024
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="announcement" className="py-16 md:py-20 bg-white">
+          <div className="container mx-auto px-4 text-center">
+            <Heart className="animate-on-scroll w-12 h-12 md:w-16 md:h-16 mx-auto mb-6 md:mb-8 text-pink-600" />
+            <h2 className="animate-on-scroll text-4xl lg:text-6xl mb-6 md:mb-8 font-alex text-pink-600">
+              We're Married!
+            </h2>
+            <p className="animate-on-scroll lg:text-2xl mb-6 md:mb-8 text-gray-700 max-w-3xl mx-auto">
+              We are overjoyed to announce our marriage and cordially invite you
+              to join us in celebrating our love and blessing our union.
+            </p>
+            <div className="animate-on-scroll w-24 md:w-32 h-1 bg-pink-300 mx-auto mb-6 md:mb-8"></div>
+            <p className="animate-on-scroll text-base md:text-lg lg:text-xl text-gray-600">
+              Your presence will make our special day even more memorable.
+            </p>
+          </div>
+        </section>
+
+        <section id="event" className="py-16 md:py-20 bg-pink-50">
+          <div className="container mx-auto px-4">
+            <h2 className="animate-on-scroll text-4xl lg:text-6xl text-center mb-12 md:mb-16 text-pink-600 font-alex">
+              Celebration Details
+            </h2>
+
+            <div className="grid gap-4 md:gap-8 w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                  <CalendarHeart className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
+                    Date
+                  </h3>
+                  <p className="text-gray-700">November 4, 2024</p>
+                </div>
+                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                  <Clock className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
+                    Time
+                  </h3>
+                  <p className="text-gray-700">4:00 PM - 10:00 PM</p>
+                </div>
+              </div>
+
+              <div>
+                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                  <MapPin className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
+                  <h3 className="text-2xl md:text-3xl font-semibold mb-2 md:mb-4 text-pink-600 font-alex">
+                    Location
+                  </h3>
+                  <p className="text-gray-700">Pondok Luwih</p>
+                  <p className="text-gray-700 mb-6">
+                    Jalan Batuyang Gg. Garuda 100X
+                  </p>
+
+                  <iframe
+                    className="rounded-3xl shadow-xl"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126227.19759786579!2d115.14019833015911!3d-8.634350410933958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23fd7aff3b747%3A0xdd2e11b1ef510d7b!2sPondok%20Luwih!5e0!3m2!1sen!2sid!4v1729780742966!5m2!1sen!2sid"
+                    width="100%"
+                    height="450"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+
+                <div className="mt-4 p-4 bg-pink-100 rounded-3xl grid gap-4">
+                  <Bike className="w-8 h-8 mx-auto text-pink-600" />
+                  <p className="text-sm md:text-base text-gray-700 text-center">
+                    <b>Note:</b> It's preferable to bring a motorcycle instead
+                    of a car. Cars can't access the venue directly, and you'll
+                    need to walk about 500 meters from the parking spot.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      <footer className="bg-pink-800 text-white relative h-[320px] md:h-[520px] flex items-center justify-center w-full">
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/footer.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
+        <div className="relative z-10 container mx-auto px-4 py-12">
+          <div className="animate-on-scroll text-center mb-8 md:mb-0">
+            <h2 className="text-5xl md:text-7xl font-bold mb-4 font-alex">
+              Budi & Saras
+            </h2>
+            <p className="mb-2">Thank you for being part of our love story</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
