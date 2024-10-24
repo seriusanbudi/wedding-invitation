@@ -73,7 +73,7 @@ export default function Home() {
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
                     Waktu
                   </h3>
-                  <p className="text-gray-700">4:00 PM - 10:00 PM</p>
+                  <p className="text-gray-700">16:00 - 22:00</p>
                 </div>
               </div>
 
