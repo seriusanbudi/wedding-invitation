@@ -1,12 +1,9 @@
 "use client";
 
-import { CalendarHeart, Clock, MapPin, Heart, Menu, Bike } from "lucide-react";
-import Link from "next/link";
-import { useState, useEffect } from "react";
+import { CalendarHeart, Clock, MapPin, Heart, Bike } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -80,7 +77,7 @@ export default function Home() {
           <div className="container mx-auto px-4 text-center">
             <Heart className="animate-on-scroll w-12 h-12 md:w-16 md:h-16 mx-auto mb-6 md:mb-8 text-pink-600" />
             <h2 className="animate-on-scroll text-4xl lg:text-6xl mb-6 md:mb-8 font-alex text-pink-600">
-              We're Married!
+              We are Married!
             </h2>
             <p className="animate-on-scroll lg:text-2xl mb-6 md:mb-8 text-gray-700 max-w-3xl mx-auto">
               We are overjoyed to announce our marriage and cordially invite you
@@ -141,9 +138,9 @@ export default function Home() {
                 <div className="mt-4 p-4 bg-pink-100 rounded-3xl grid gap-4">
                   <Bike className="w-8 h-8 mx-auto text-pink-600" />
                   <p className="text-sm md:text-base text-gray-700 text-center">
-                    <b>Note:</b> It's preferable to bring a motorcycle instead
-                    of a car. Cars can't access the venue directly, and you'll
-                    need to walk about 500 meters from the parking spot.
+                    <b>Note:</b> It is preferable to bring a motorcycle instead
+                    of a car. Cars can not access the venue directly, and you
+                    will need to walk about 500 meters from the parking spot.
                   </p>
                 </div>
               </div>
