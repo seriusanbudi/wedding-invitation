@@ -22,7 +22,7 @@ export default function Home() {
                   <h1 className=" text-6xl lg:text-8xl font-bold mb-4 font-alex text-pink-600">
                     Budi & Saras
                   </h1>
-                  <p className=" text-base sm:font-bold underline">
+                  <p className="bg-pink-600 text-base font-bold px-4 py-1 text-white rounded-md">
                     November 4, 2024
                   </p>
                 </div>
@@ -83,14 +83,24 @@ export default function Home() {
                     Jalan Batuyang Gg. Garuda 100X
                   </p>
 
-                  <iframe
-                    className="rounded-3xl shadow-xl"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126227.19759786579!2d115.14019833015911!3d-8.634350410933958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23fd7aff3b747%3A0xdd2e11b1ef510d7b!2sPondok%20Luwih!5e0!3m2!1sen!2sid!4v1729780742966!5m2!1sen!2sid"
-                    width="100%"
-                    height="450"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                  <div className="mb-10">
+                    <iframe
+                      className="rounded-3xl shadow-xl h-[250px] lg:h-[450px]"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126227.19759786579!2d115.14019833015911!3d-8.634350410933958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23fd7aff3b747%3A0xdd2e11b1ef510d7b!2sPondok%20Luwih!5e0!3m2!1sen!2sid!4v1729780742966!5m2!1sen!2sid"
+                      width="100%"
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://maps.app.goo.gl/gCKwop4cS8khAigq7"
+                    className="px-4 py-2 bg-pink-600 rounded-md text-white font-semibold"
+                  >
+                    See location on the map
+                  </a>
                 </div>
 
                 <div className="mt-4 p-4 bg-pink-100 rounded-3xl grid gap-4">
