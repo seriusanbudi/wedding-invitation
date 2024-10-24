@@ -56,14 +56,14 @@ export default function Home() {
 
             <div className="grid gap-4 md:gap-8 w-full">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <CalendarHeart className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
                     Date
                   </h3>
                   <p className="text-gray-700">November 4, 2024</p>
                 </div>
-                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <Clock className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
                     Time
@@ -73,7 +73,7 @@ export default function Home() {
               </div>
 
               <div>
-                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <MapPin className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 md:mb-4 text-pink-600 font-alex">
                     Location
