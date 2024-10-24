@@ -22,9 +22,11 @@ export default function Home() {
                   <h1 className=" text-6xl lg:text-8xl font-bold mb-4 font-alex text-pink-600">
                     Budi & Saras
                   </h1>
-                  <p className="bg-pink-600 text-base font-bold px-4 py-1 text-white rounded-md">
-                    November 4, 2024
-                  </p>
+                  <div className="flex justify-center">
+                    <p className="bg-pink-600 text-base font-bold px-4 py-1 text-white rounded-md w-fit">
+                      November 4, 2024
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
