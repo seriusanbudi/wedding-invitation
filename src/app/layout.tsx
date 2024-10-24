@@ -11,7 +11,7 @@ const alexBrush = localFont({
 export const metadata: Metadata = {
   title: "Budi & Saras",
   description:
-    "We are overjoyed to announce our marriage and cordially invite you to join us in celebrating our love and blessing our union.",
+    "Dengan penuh sukacita, kami mengumumkan pernikahan kami dan dengan hormat mengundang Anda untuk bergabung bersama kami dalam merayakan cinta ini serta memberikan doa restu untuk kebahagiaan dan kelanggengan ikatan kami.",
 };
 
 export default function RootLayout({
