@@ -19,10 +19,10 @@ export default function Home() {
                 <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[92px] bg-gradient-to-r from-transparent from-20% via-white to-white" />
 
                 <div className="relative text-center z-10 px-4">
-                  <h1 className="animate-on-scroll text-6xl lg:text-8xl font-bold mb-4 font-alex text-pink-600">
+                  <h1 className=" text-6xl lg:text-8xl font-bold mb-4 font-alex text-pink-600">
                     Budi & Saras
                   </h1>
-                  <p className="animate-on-scroll text-base sm:font-bold underline">
+                  <p className=" text-base sm:font-bold underline">
                     November 4, 2024
                   </p>
                 </div>
@@ -33,16 +33,16 @@ export default function Home() {
 
         <section id="announcement" className="py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4 text-center">
-            <Heart className="animate-on-scroll w-12 h-12 md:w-16 md:h-16 mx-auto mb-6 md:mb-8 text-pink-600" />
-            <h2 className="animate-on-scroll text-4xl lg:text-6xl mb-6 md:mb-8 font-alex text-pink-600">
+            <Heart className=" w-12 h-12 md:w-16 md:h-16 mx-auto mb-6 md:mb-8 text-pink-600" />
+            <h2 className=" text-4xl lg:text-6xl mb-6 md:mb-8 font-alex text-pink-600">
               We are Married!
             </h2>
-            <p className="animate-on-scroll lg:text-2xl mb-6 md:mb-8 text-gray-700 max-w-3xl mx-auto">
+            <p className=" lg:text-2xl mb-6 md:mb-8 text-gray-700 max-w-3xl mx-auto">
               We are overjoyed to announce our marriage and cordially invite you
               to join us in celebrating our love and blessing our union.
             </p>
-            <div className="animate-on-scroll w-24 md:w-32 h-1 bg-pink-300 mx-auto mb-6 md:mb-8"></div>
-            <p className="animate-on-scroll text-base md:text-lg lg:text-xl text-gray-600">
+            <div className=" w-24 md:w-32 h-1 bg-pink-300 mx-auto mb-6 md:mb-8"></div>
+            <p className=" text-base md:text-lg lg:text-xl text-gray-600">
               Your presence will make our special day even more memorable.
             </p>
           </div>
@@ -50,20 +50,20 @@ export default function Home() {
 
         <section id="event" className="py-16 md:py-20 bg-pink-50">
           <div className="container mx-auto px-4">
-            <h2 className="animate-on-scroll text-4xl lg:text-6xl text-center mb-12 md:mb-16 text-pink-600 font-alex">
+            <h2 className=" text-4xl lg:text-6xl text-center mb-12 md:mb-16 text-pink-600 font-alex">
               Celebration Details
             </h2>
 
             <div className="grid gap-4 md:gap-8 w-full">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
+                <div className=" bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <CalendarHeart className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
                     Date
                   </h3>
                   <p className="text-gray-700">November 4, 2024</p>
                 </div>
-                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
+                <div className=" bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <Clock className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
                     Time
@@ -73,7 +73,7 @@ export default function Home() {
               </div>
 
               <div>
-                <div className="animate-on-scroll bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
+                <div className=" bg-white p-6 md:p-8 rounded-3xl shadow-lg text-center transform transition-transform duration-300">
                   <MapPin className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 md:mb-4 text-pink-600 font-alex">
                     Location
@@ -110,7 +110,7 @@ export default function Home() {
       <footer className="bg-pink-800 text-white relative h-[320px] md:h-[520px] flex items-center justify-center w-full">
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/images/footer.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
         <div className="relative z-10 container mx-auto px-4 py-12">
-          <div className="animate-on-scroll text-center">
+          <div className=" text-center">
             <p className="font-alex text-2xl md:text-4xl">
               Thank you for being part of our love story
             </p>
