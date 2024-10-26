@@ -11,12 +11,12 @@ import {
 export default function Home() {
   return (
     <div className="min-h-dvh bg-gradient-to-b from-pink-100 to-white">
-      <main>
-        <section
-          id="home"
-          className="bg-[url('/images/main-2-mobile.jpg')] lg:bg-[url('/images/main-2-desktop.jpg')] bg-cover bg-top bg-no-repeat relative"
-        >
-          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-white h-[300px] w-full" />
+      <div className="h-dvh w-full fixed inset-0">
+        <div className="bg-[url('/images/main-2-mobile.jpg')] w-full h-full lg:bg-[url('/images/main-2-desktop.jpg')] bg-cover bg-top bg-no-repeat" />
+      </div>
+
+      <main className="relative">
+        <section id="home" className="relative">
           <div className="container mx-auto text-center">
             <div className="max-w-3xl mx-auto">
               <div className="relative min-h-dvh flex items-center justify-center">
@@ -40,6 +40,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="w-full h-[240px] bg-gradient-to-b from-transparent to-white absolute bottom-0 left-0 right-0" />
         </section>
 
         <section id="announcement" className="py-16 md:py-20 bg-white">
