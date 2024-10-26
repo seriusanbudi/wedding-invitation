@@ -14,15 +14,12 @@ export default function Home() {
       <main>
         <section
           id="home"
-          className="bg-white relative border-b border-dashed border-pink-600"
+          className="bg-[url('/images/main-2-mobile.jpg')] lg:bg-[url('/images/main-2-desktop.jpg')] bg-cover bg-top bg-no-repeat relative"
         >
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-white h-[300px] w-full" />
           <div className="container mx-auto text-center">
             <div className="max-w-3xl mx-auto">
               <div className="relative min-h-dvh flex items-center justify-center">
-                {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/images/main.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
-                <div className="hidden md:block absolute top-0 left-0 bottom-0 w-[92px] bg-gradient-to-l from-transparent from-20% via-white to-white" />
-                <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[92px] bg-gradient-to-r from-transparent from-20% via-white to-white" /> */}
-
                 <div className="relative text-center z-10 px-4 w-full md:w-[80%] grid gap-4">
                   <div className="text-pink-600 tracking-[6px]">PERNIKAHAN</div>
                   <h1 className="text-6xl lg:text-8xl font-bold font-alex text-pink-600 relative w-full py-6 flex justify-center gap-4">
