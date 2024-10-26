@@ -137,13 +137,15 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-pink-800 text-white relative h-[320px] md:h-[520px] flex items-center justify-center w-full">
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/images/footer.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
+      <footer className="bg-white text-white relative h-[320px] md:h-[520px] flex items-center justify-center w-full">
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/images/footer.jpg')] bg-cover bg-center bg-no-repeat opacity-20" />
         <div className="relative z-10 container mx-auto px-4 py-12">
           <div className=" text-center">
-            <p className="font-alex text-5xl md:text-7xl">Terima kasih</p>
-            <p className="text-xl md:text-2xl">
-              Untuk menjadi bagian dari kisah cinta kami.
+            <p className="font-alex text-5xl md:text-7xl text-pink-600">
+              Terima kasih
+            </p>
+            <p className="text-base text-gray-700">
+              Telah menjadi bagian dari kisah cinta kami.
             </p>
           </div>
         </div>
