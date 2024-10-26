@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <section
           id="home"
-          className="bg-[url('/images/main-2-mobile.jpg')] lg:bg-[url('/images/main-2-desktop.jpg')] bg-cover bg-top bg-no-repeat relative"
+          className="bg-[url('/images/main-2-mobile.jpg')] lg:bg-[url('/images/main-2-desktop.jpg')] bg-cover bg-top bg-no-repeat relative bg-fixed"
         >
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-white h-[300px] w-full" />
           <div className="container mx-auto text-center">
