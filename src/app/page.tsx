@@ -12,24 +12,30 @@ export default function Home() {
   return (
     <div className="min-h-dvh bg-gradient-to-b from-pink-100 to-white">
       <main>
-        <section id="home" className="bg-white relative shadow-2xl">
+        <section
+          id="home"
+          className="bg-white relative border-b border-dashed border-pink-600"
+        >
           <div className="container mx-auto text-center">
             <div className="max-w-3xl mx-auto">
-              <div className="relative h-screen flex items-center justify-center">
-                <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/images/main.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
+              <div className="relative min-h-dvh flex items-center justify-center">
+                {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-[url('/images/main.jpg')] bg-cover bg-center bg-no-repeat opacity-40" />
                 <div className="hidden md:block absolute top-0 left-0 bottom-0 w-[92px] bg-gradient-to-l from-transparent from-20% via-white to-white" />
-                <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[92px] bg-gradient-to-r from-transparent from-20% via-white to-white" />
+                <div className="hidden md:block absolute top-0 right-0 bottom-0 w-[92px] bg-gradient-to-r from-transparent from-20% via-white to-white" /> */}
 
-                <div className="relative text-center z-10 px-4 w-full md:w-[80%]">
-                  <h1 className=" text-6xl lg:text-8xl font-bold mb-4 font-alex text-pink-600 relative w-full py-6">
-                    <div className="z-10 relative whitespace-nowrap">
-                      Budi & Saras
+                <div className="relative text-center z-10 px-4 w-full md:w-[80%] grid gap-4">
+                  <div className="text-pink-600 tracking-[6px]">PERNIKAHAN</div>
+                  <h1 className="text-6xl lg:text-8xl font-bold font-alex text-pink-600 relative w-full py-6 flex justify-center gap-4">
+                    <div className="flex items-center justify-center gap-6">
+                      <div>Budi</div>
+                      <div className="text-3xl">&</div>
+                      <div>Saras</div>
                     </div>
 
                     <div className="w-full h-full bg-pink-300 absolute top-0 left-0 right-0 bottom-0 blur-3xl opacity-60" />
                   </h1>
                   <div className="flex justify-center">
-                    <p className="bg-pink-600 text-base font-bold px-4 py-1 text-white rounded-md w-fit">
+                    <p className="border-2 border-pink-600 text-base font-bold px-4 py-1 text-pink-600 rounded-md w-fit">
                       4 November 2024
                     </p>
                   </div>
@@ -67,14 +73,14 @@ export default function Home() {
 
             <div className="grid gap-4 md:gap-8 w-full">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-                <div className=" bg-white p-6 md:p-8 rounded-3xl text-center transform transition-transform duration-300">
+                <div className=" bg-white p-6 md:p-8 rounded-3xl text-center">
                   <CalendarHeart className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
                     Hari & Tanggal
                   </h3>
                   <p className="text-gray-700">Senin, 4 November 2024</p>
                 </div>
-                <div className=" bg-white p-6 md:p-8 rounded-3xl text-center transform transition-transform duration-300">
+                <div className=" bg-white p-6 md:p-8 rounded-3xl text-center">
                   <Clock className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 text-pink-600 font-alex">
                     Waktu
@@ -83,7 +89,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="bg-white p-6 md:p-8 rounded-3xl text-center transform transition-transform duration-300 grid gap-4">
+              <div className="bg-white p-6 md:p-8 rounded-3xl text-center grid gap-4">
                 <div>
                   <MapPin className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 md:mb-6 text-pink-600" />
                   <h3 className="text-2xl md:text-3xl font-semibold mb-2 md:mb-4 text-pink-600 font-alex">
@@ -104,9 +110,9 @@ export default function Home() {
                 <div className="p-4 bg-pink-100 rounded-3xl grid gap-2 border-2 border-pink-600 mb-2">
                   <TriangleAlert className="w-8 h-8 mx-auto text-pink-600" />
                   <p className="text-sm md:text-base text-gray-700 text-center">
-                    Lebih disarankan untuk membawa motor, karena mobil tidak
-                    bisa langsung masuk ke lokasi. Anda perlu berjalan sekitar
-                    500 meter dari tempat parkir.
+                    Lebih disarankan untuk <b>membawa motor</b>, karena mobil
+                    tidak bisa langsung masuk ke lokasi. Anda perlu berjalan
+                    sekitar 500 meter dari tempat parkir.
                   </p>
                 </div>
                 <div>
