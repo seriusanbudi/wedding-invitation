@@ -19,16 +19,16 @@ export default function Home() {
           <div className="text-center">
             <div>
               <div className="relative min-h-dvh flex items-center justify-center">
-                <div className="relative text-center z-10 w-full grid gap-4">
+                <div className="relative text-center z-10 w-full grid gap-4 py-4 lg:py-20">
+                  <div className="w-full h-full bg-pink-300 absolute top-0 left-0 right-0 bottom-0 blur-3xl opacity-50" />
                   <div className="text-pink-500 tracking-[6px]">PERNIKAHAN</div>
-                  <div className="flex lg:py-20 items-center justify-between gap-6 lg:gap-8 text-[16vw] lg:text-[8vw] font-bold font-alex text-pink-500 relative">
-                    <div className="w-full h-full bg-pink-300 absolute top-0 left-0 right-0 bottom-0 blur-3xl opacity-50" />
+                  <div className="flex items-center justify-between gap-6 lg:gap-8 text-[16vw] lg:text-[8vw] font-bold font-alex text-pink-500 relative">
                     <div className="flex-1 text-right">Budi</div>
                     <div className="text-[5vw] lg:text-[3vw] flex-none">&</div>
                     <div className="flex-1 text-left">Saras</div>
                   </div>
                   <div className="flex justify-center">
-                    <p className="border-2 border-pink-500 text-base font-bold px-4 py-1 text-pink-500 rounded-md w-fit">
+                    <p className="border-2 border-pink-500 text-base font-bold px-4 py-1 text-pink-500 rounded-md w-fit bg-pink-300/50">
                       4 November 2024
                     </p>
                   </div>
